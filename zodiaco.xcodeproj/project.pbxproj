@@ -3,19 +3,23 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E2AB28182556F5FF00013578 /* ZodModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AB28172556F5FF00013578 /* ZodModel.swift */; };
 		E2F83C71254ADCD400BC2860 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F83C70254ADCD400BC2860 /* AppDelegate.swift */; };
 		E2F83C73254ADCD400BC2860 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F83C72254ADCD400BC2860 /* SceneDelegate.swift */; };
 		E2F83C75254ADCD400BC2860 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F83C74254ADCD400BC2860 /* ViewController.swift */; };
 		E2F83C78254ADCD400BC2860 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2F83C76254ADCD400BC2860 /* Main.storyboard */; };
 		E2F83C7A254ADCD900BC2860 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2F83C79254ADCD900BC2860 /* Assets.xcassets */; };
 		E2F83C7D254ADCD900BC2860 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2F83C7B254ADCD900BC2860 /* LaunchScreen.storyboard */; };
+		E2F83C882552C41000BC2860 /* Zodiaco.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F83C872552C41000BC2860 /* Zodiaco.swift */; };
+		E2F83C8D2552F55900BC2860 /* ZodiacoManage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F83C8C2552F55900BC2860 /* ZodiacoManage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E2AB28172556F5FF00013578 /* ZodModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZodModel.swift; sourceTree = "<group>"; };
 		E2F83C6D254ADCD400BC2860 /* zodiaco.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zodiaco.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2F83C70254ADCD400BC2860 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2F83C72254ADCD400BC2860 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +28,8 @@
 		E2F83C79254ADCD900BC2860 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2F83C7C254ADCD900BC2860 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E2F83C7E254ADCD900BC2860 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2F83C872552C41000BC2860 /* Zodiaco.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zodiaco.swift; sourceTree = "<group>"; };
+		E2F83C8C2552F55900BC2860 /* ZodiacoManage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZodiacoManage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +43,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E2D25A582556FB0200FF4E69 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				E2F83C74254ADCD400BC2860 /* ViewController.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
 		E2F83C64254ADCD400BC2860 = {
 			isa = PBXGroup;
 			children = (
@@ -58,13 +72,24 @@
 			children = (
 				E2F83C70254ADCD400BC2860 /* AppDelegate.swift */,
 				E2F83C72254ADCD400BC2860 /* SceneDelegate.swift */,
-				E2F83C74254ADCD400BC2860 /* ViewController.swift */,
+				E2D25A582556FB0200FF4E69 /* view */,
+				E2F83C8A2552C61800BC2860 /* model */,
 				E2F83C76254ADCD400BC2860 /* Main.storyboard */,
 				E2F83C79254ADCD900BC2860 /* Assets.xcassets */,
 				E2F83C7B254ADCD900BC2860 /* LaunchScreen.storyboard */,
 				E2F83C7E254ADCD900BC2860 /* Info.plist */,
 			);
 			path = zodiaco;
+			sourceTree = "<group>";
+		};
+		E2F83C8A2552C61800BC2860 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				E2F83C872552C41000BC2860 /* Zodiaco.swift */,
+				E2F83C8C2552F55900BC2860 /* ZodiacoManage.swift */,
+				E2AB28172556F5FF00013578 /* ZodModel.swift */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,7 +127,7 @@
 				};
 			};
 			buildConfigurationList = E2F83C68254ADCD400BC2860 /* Build configuration list for PBXProject "zodiaco" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 11.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -137,9 +162,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2F83C8D2552F55900BC2860 /* ZodiacoManage.swift in Sources */,
 				E2F83C75254ADCD400BC2860 /* ViewController.swift in Sources */,
+				E2F83C882552C41000BC2860 /* Zodiaco.swift in Sources */,
 				E2F83C71254ADCD400BC2860 /* AppDelegate.swift in Sources */,
 				E2F83C73254ADCD400BC2860 /* SceneDelegate.swift in Sources */,
+				E2AB28182556F5FF00013578 /* ZodModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
